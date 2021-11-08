@@ -1,0 +1,22 @@
+name: "my hello action"
+
+description: "say kia ora with github actions"
+
+runs:
+  using: "node12"
+  main: "main.js"
+
+inputs:
+  first-greeting:
+    description: "who would like to greet me in the console?"
+    required: true
+    default: "*random alien noise*"
+
+  second-greeting:
+    description: "another dude to greet"
+    required: true
+    default: "*extreme constipation noises*"
+  
+  third-greeting:
+    description: "another alien greeting"
+    required: false
