@@ -2,10 +2,6 @@ name: "my hello action"
 
 description: "say kia ora with github actions"
 
-runs:
-  using: "node12"
-  main: "main.js"
-
 inputs:
   first-greeting:
     description: "who would like to greet me in the console?"
@@ -20,3 +16,7 @@ inputs:
   third-greeting:
     description: "another alien greeting"
     required: false
+
+runs:
+  using: "node12"
+  main: "dist/main.js"
